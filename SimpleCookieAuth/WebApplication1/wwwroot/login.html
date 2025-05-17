@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+
+    <link rel="stylesheet" href="/site.css">
+
+</head>
+<body>
+    <h2>Login</h2>
+
+    <p>
+        <strong>🔑 Test credentials:</strong><br />
+        ✅ <code>admin / a123</code> – valid login<br />
+        ✅ <code>tester / t123</code> – valid login<br />
+        ❌ <code>john / invalidpass</code> – will fail
+    </p>
+
+    <form action="/login" method="post">
+        <label>Username: <input name="username" /></label><br />
+        <label>Password: <input name="password" type="password" /></label><br />
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
